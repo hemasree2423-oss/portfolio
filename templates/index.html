@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-inner">
+
+    <h1 class="hero-heading">
+      Hi, I'm <span class="mark">HEMASREE SENTHILKUMAR</span>.<br>
+      I'm a CS Engineering student who likes making things that actually run.
+    </h1>
+
+    <p class="hero-sub">
+      <p class="hero-sub">
+  I'm a Computer Science student who loves coding and building things. Currently exploring full-stack development and AI/ML, one project at a time.
+</p>
+
+    </p>
+  </div>
+</section>
+
+<section class="section quick-facts">
+  <div class="quick-facts-grid">
+    <div class="quick-fact">
+      <span class="quick-fact-label">studying</span>
+      <span class="quick-fact-value">Computer Science Engineering</span>
+    </div>
+    <div class="quick-fact">
+      <span class="quick-fact-label">based in</span>
+      <span class="quick-fact-value">Madurai</span>
+    </div>
+    <div class="quick-fact">
+      <span class="quick-fact-label">right now</span>
+      <span class="quick-fact-value">Exploring full-stack development and AI/ML</span>
+    </div>
+  </div>
+</section>
+
+<section class="section teaser-grid">
+  <a class="teaser-card" href="{% url 'main:about' %}">
+    <span class="teaser-tag">01</span>
+    <h2>About &amp; journey</h2>
+    <p>Who I am, what I'm learning, and the path so far — from first "Hello, World" to now.</p>
+    <span class="teaser-link">Read my story →</span>
+  </a>
+
+  <a class="teaser-card" href="{% url 'main:projects' %}">
+    <span class="teaser-tag">02</span>
+    <h2>Projects &amp; internship</h2>
+    <p>What I've actually built, what problems they solve, and what I worked on during my internship.</p>
+    <span class="teaser-link">See the work →</span>
+  </a>
+
+  <a class="teaser-card" href="{% url 'main:contact' %}">
+    <span class="teaser-tag">03</span>
+    <h2>Get in touch</h2>
+    <p>GitHub, LinkedIn, email — if something here's interesting to you, I'd like to hear from you.</p>
+    <span class="teaser-link">Say hi →</span>
+  </a>
+</section>
+{% endblock %}

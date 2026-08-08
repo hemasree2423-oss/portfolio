@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block nav_projects %}active{% endblock %}
+{% block title %}Projects — [ADD YOUR NAME HERE]{% endblock %}
+
+{% block content %}
+
+<section class="section">
+  <p class="section-eyebrow">projects</p>
+  <h1 class="section-heading">Things I've built</h1>
+  <p class="section-lede">Academic, AI/ML, and development projects — what problem each one solves and what I actually did.</p>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+  <p class="project-file">project_01.md</p>
+
+  <h2>Kidney Disease Prediction</h2>
+
+  <p class="project-field">
+    <strong>Problem it solves:</strong>
+    Uses machine learning to predict the likelihood of kidney disease based on given patient data.
+  </p>
+
+  <p class="project-field">
+    <strong>What I worked on:</strong>
+    Worked on data preprocessing, model training, prediction, and building a Streamlit interface for the application.
+  </p>
+
+  <p class="project-field">
+    <strong>What I learned:</strong>
+    Learned about data preprocessing, machine learning workflows, model prediction, and connecting a trained model to a web interface.
+  </p>
+
+  <div class="tag-row">
+    <span class="tag">Python</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Scikit-learn</span>
+    <span class="tag">Streamlit</span>
+  </div>
+
+  <div class="project-actions">
+    <a href="https://github.com/hemasree2423-oss/kidney-disease-prediction" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Code</a>
+    <a href="https://kidney-disease-prediction-0901.streamlit.app/" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Demo</a>
+  </div>
+</article>
+
+    <article class="project-card">
+      <p class="project-file">project_02.md</p>
+      <h2>[ADD PROJECT NAME HERE]</h2>
+      <p class="project-field"><strong>Problem it solves:</strong> [ADD WHAT PROBLEM THIS PROJECT SOLVES HERE]</p>
+      <p class="project-field"><strong>What I worked on:</strong> [ADD WHAT YOU PERSONALLY BUILT/CONTRIBUTED HERE]</p>
+      <p class="project-field"><strong>What I learned:</strong> [ADD WHAT YOU LEARNED HERE]</p>
+      <div class="tag-row">
+        <span class="tag">[ADD TECH HERE]</span>
+        <span class="tag">[ADD TECH HERE]</span>
+      </div>
+      <div class="project-actions">
+        <a href="[ADD GITHUB LINK HERE]" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Code</a>
+        <a href="[ADD DEMO LINK HERE IF AVAILABLE]" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section internship">
+  <p class="section-eyebrow">internship</p>
+  <h2 class="section-heading">Sentiment Analysis</h2>
+  <div class="prose">
+    <p>
+      During my internship, I worked on a Sentiment Analysis project that focused on identifying the sentiment expressed in text. The goal was to process text data and classify it based on whether the sentiment was positive, negative, or neutral.
+    </p>
+    <p>
+      My work involved preparing and preprocessing the text data, working with the machine learning model, and testing its predictions. I explored how text needs to be cleaned and transformed before it can be used by a machine learning model.
+    </p>
+    <p>One of the things I learned from this project was how natural language processing and machine learning can be combined to make sense of human language. It also gave me practical experience working with real-world data and understanding the steps involved in building an ML application.</p>
+  </div>
+  <div class="tag-row">
+    <span class="tag">Python</span>
+    <span class="tag">Streamlit</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Data Preprocessing</span>
+    <span class="tag">NLP</span>
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-eyebrow">achievements &amp; experiences</p>
+  <h2 class="section-heading">Along the way</h2>
+  <ul class="learning-list">
+    <li><strong>Completed Artificial Intelligence training and internship</strong>
+You completed AI training followed by an internship associated with IIT Bombay's Mood Indigo and Corizo Edutech, from September–November 2025.</li>
+    <li><strong>Programming Using Java certification</strong> — Infosys Springboard
+You completed a Java certification focused on programming, OOP concepts, and backend programming fundamentals.</li>
+    <li><strong>SQL & PostgreSQL course</strong> — Udemy
+You completed training covering SQL, PostgreSQL, joins, subqueries, indexing, data modelling, and related database concepts.</li>
+    <li><strong>Google Cloud — Generative AI & Responsible AI</strong>
+You completed courses covering Generative AI fundamentals and responsible AI concepts.</li>
+    <li><strong>Microsoft & LinkedIn — Machine Learning and Generative AI</strong>
+You completed courses focused on Machine Learning and Generative AI and their practical applications.</li>
+    <li><strong>IBM Artificial Intelligence course</strong>
+You completed an IBM AI course covering areas including AI, NLP, Computer Vision, Machine Learning, Deep Learning, AI ethics, and prompt engineering.</li>
+    <li><strong>Pandas course</strong>
+You completed training focused on data cleaning, manipulation, and analysis using Pandas.</li>
+    <li><strong>Multiple professional certifications / learning programs</strong> 
+Your LinkedIn certifications section also lists credentials from organizations/platforms including Infosys, Tata Group/Forage, HackerRank, IBM, Kaggle, Saylor Academy, Microsoft/Tata STRIVE, Deloitte Australia–Forage, and Google/Coursera.</li>
+
+  </ul>
+</section>
+
+{% endblock %}

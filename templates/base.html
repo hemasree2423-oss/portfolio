@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}[ADD YOUR NAME HERE] — CS Engineering Student{% endblock %}</title>
+  <meta name="description" content="{% block description %}Personal site of [ADD YOUR NAME HERE], a Computer Science Engineering student. Projects, internship experience, and what I'm currently learning.{% endblock %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="tabbar">
+    <div class="tabbar-inner">
+      <a class="tabbar-brand" href="{% url 'main:home' %}">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">HEMASREE S</span>
+      </a>
+
+      <button class="tabbar-toggle" id="navToggle" aria-expanded="false" aria-controls="tabbarNav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="tabbar-nav" id="tabbarNav">
+        <a href="{% url 'main:home' %}" class="tab {% block nav_home %}{% endblock %}">home.html</a>
+        <a href="{% url 'main:about' %}" class="tab {% block nav_about %}{% endblock %}">about.html</a>
+        <a href="{% url 'main:projects' %}" class="tab {% block nav_projects %}{% endblock %}">projects.html</a>
+        <a href="{% url 'main:contact' %}" class="tab {% block nav_contact %}{% endblock %}">contact.html</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-prompt">
+      <span>HEMASREE S, learning, building, and still figuring things out.</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/hemasree2423-oss" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/hemasree2423/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hemasree2423@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
