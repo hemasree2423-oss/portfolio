@@ -1,4 +1,4 @@
-# Personal Portfolio — Django
+# Personal Portfolio
 
 A personal profile website built with Django, plain HTML/CSS/JS (no frontend
 framework, no build step). Designed to look hand-made rather than templated:
