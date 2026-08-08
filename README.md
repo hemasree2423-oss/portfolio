@@ -87,3 +87,4 @@ support Django out of the box. Before deploying anywhere public:
 - Set `DEBUG = False` in `mysite/settings.py`
 - Generate a new `SECRET_KEY` (see the comment above it in `settings.py`)
 - Add your real domain to `ALLOWED_HOSTS`
+"# portfolio" 
